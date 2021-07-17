@@ -1,5 +1,5 @@
 DOCS_DIRECTORY=${PWD}/.build/documentation
-MODULE_NAME="MyLibrary"
+MODULE_NAME="SwiftUITypographyUtils"
 
 swift doc generate \
   ./Sources/${MODULE_NAME} \
