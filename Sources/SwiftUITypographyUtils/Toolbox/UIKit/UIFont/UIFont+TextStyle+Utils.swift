@@ -1,12 +1,11 @@
-#if os(macOS)
+#if canImport(UIKit)
 
 import SwiftUI
-import Cocoa
 
 
-extension NSFont.TextStyle {
+extension UIFont.TextStyle {
     
-    internal init(
+    init(
         fromSwiftUIFontTextStyle textStyle: Font.TextStyle
     ) {
         switch textStyle {

@@ -1,38 +1,51 @@
-#if os(macOS)
+#if canImport(AppKit)
 
-import Cocoa
 import SwiftUI
-
 
 extension CustomFont {
     
     /// Get the scaled font for the given text style using the
     /// style dictionary supplied at initialization.
     ///
-    /// - Parameter textStyle: The `UIFont.TextStyle` for the
+    /// - Parameter textStyle: The `NSFont.TextStyle` for the
     ///   font.
-    /// - Returns: A `UIFont` of the custom font that has been
-    ///   scaled for the users currently selected preferred
+    /// - Returns: A `NSFont` representatoin of the ``CustomFont`` that has been
+    ///   scaled for the user's currently selected preferred
     ///   text size.
     ///
-    /// - Note: If the style dictionary does not have
-    ///   a font for this text style the default preferred
-    ///   font is returned.
-    public func scaledFont(
+    /// ### 📝 Note
+    ///
+    /// The default preferred system font is returned if:
+    ///
+    /// - The ``CustomFont``'s style dictionary does not have a font for this text style.
+    /// - A matching `UIFont` can't be found for the ``CustomFont``'s family name.
+    public func nsFont(
         forTextStyle textStyle: NSFont.TextStyle
     ) -> NSFont {
         guard
+            let styleDictionary = styleDictionary,
             let styleKey = StyleKey(textStyle),
-            let fontDescription = styleDictionary?[styleKey.rawValue],
-            let font = NSFont(
-                name: fontDescription.fontName,
-                size: fontDescription.fontSize
-            )
+            let matchingNSFont = matchingNSFont(for: styleKey, in: styleDictionary)
         else {
             return NSFont.preferredFont(forTextStyle: textStyle)
         }
         
-        return font
+        return matchingNSFont
+    }
+    
+    
+    internal func matchingNSFont(
+        for styleKey: StyleKey,
+        in styleDictionary: StyleDictionary
+    ) -> NSFont? {
+        guard let customFontDescription = styleDictionary[styleKey.rawValue] else {
+            return nil
+        }
+        
+        return NSFont(
+            name: customFontDescription.fontName,
+            size: customFontDescription.fontSize
+        )
     }
 }
 

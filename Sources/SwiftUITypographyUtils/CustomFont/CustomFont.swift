@@ -12,7 +12,8 @@ public struct CustomFont {
 
 // MARK: -  Public Static Instances
 extension CustomFont {
-    public static let `default` = CustomFont(settingsFileName: "")
+    // TODO: Remove this?
+    public static let `default` = CustomFont()
 }
 
 
@@ -38,25 +39,49 @@ extension CustomFont {
         let fontName: String
     }
     
-    
-    /// Create a `CustomFont`
-    ///
-    /// - Parameter fontName: Name of a plist file (without the extension)
-    ///   that contains the style dictionary used to scale fonts for each
+    /// Create a ``CustomFont`` instance.
+    /// - Parameters:
+    ///   - settingsFileName: Name of the Property List file (without the extension) that contains the style dictionary used to scale fonts for each
     ///   text style.
-    /// - Parameter bundle: The `Bundle` that contains the style dictionary.
-    ///   Default is the main bundle.
+    ///   - bundle: The `Bundle` containing the `settingsFileName`.
+    ///     - Default: `Bundle.main`.
+    /// - Throws: ``CustomFont/Error``
     public init(
-        settingsFileName: String,
+        settingsFileName: String? = nil,
         bundle: Bundle = .main
-    ) {
-        if
-            let url = bundle.url(forResource: settingsFileName, withExtension: "plist"),
-            let data = try? Data(contentsOf: url)
-        {
-            let decoder = PropertyListDecoder()
-            
-            styleDictionary = try? decoder.decode(StyleDictionary.self, from: data)
+    ) throws {
+        guard let settingsFileName = settingsFileName else { return }
+        
+        guard let url = bundle.url(
+            forResource: settingsFileName,
+            withExtension: "plist"
+        ) else {
+            throw Error.settingsFileNotFound
+        }
+
+        let data = try loadSettings(inFileAt: url)
+        
+        do {
+            styleDictionary = try PropertyListDecoder().decode(
+                StyleDictionary.self,
+                from: data
+            )
+        } catch let error as DecodingError {
+            throw Error.settingsFileDecodingFailed(error)
+        } catch let error {
+            throw error
+        }
+    }
+}
+
+
+extension CustomFont {
+    
+    private func loadSettings(inFileAt url: URL) throws -> Data {
+        do {
+            return try Data(contentsOf: url)
+        } catch {
+            throw Error.dataLoadingFailed(error)
         }
     }
 }
@@ -127,14 +152,14 @@ extension CustomFont {
         } else {
             #if os(macOS)
             return Font(
-                scaledFont(
+                nsFont(
                     forTextStyle: NSFont.TextStyle(fromSwiftUIFontTextStyle: textStyle)
                 )
             )
             #else
             // Fallback to UIKit methods for iOS 13
             return Font(
-                scaledFont(
+                scaledUIFont(
                     forTextStyle: UIFont.TextStyle(fromSwiftUIFontTextStyle: textStyle)
                 )
             )

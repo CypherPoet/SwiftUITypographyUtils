@@ -1,0 +1,16 @@
+@Tutorials(name: "Custom Font") {
+    @Intro(title: "Custom Fonts with Structured Styling and Dynamic Scaling") {
+        Property Lists
+        
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+    }
+    
+<!--    @Chapter(name: "Configuring") {-->
+<!--        Configuring a `CustomFont` instance with a Property List.-->
+<!--        -->
+<!--        @Image(source: <#file#>, alt: "<#accessible description#>")-->
+<!--        -->
+<!--        @TutorialReference(tutorial: "doc:<#tutorial name#>")-->
+<!--    }-->
+    
+}

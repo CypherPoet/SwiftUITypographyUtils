@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 #if os(macOS)
 
 import Cocoa
@@ -17,7 +16,6 @@ extension View {
 
 #else
 
-
 extension View {
     
     public static func pointSize(for textStyle: Font.TextStyle) -> CGFloat {
@@ -29,4 +27,3 @@ extension View {
 }
 
 #endif
-

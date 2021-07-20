@@ -1,4 +1,4 @@
-#if !os(macOS)
+#if canImport(UIKit)
 
 import SwiftUI
 
@@ -10,30 +10,44 @@ extension CustomFont {
     ///
     /// - Parameter textStyle: The `UIFont.TextStyle` for the
     ///   font.
-    /// - Returns: A `UIFont` of the custom font that has been
-    ///   scaled for the users currently selected preferred
+    /// - Returns: A `UIFont` representatoin of the ``CustomFont`` that has been
+    ///   scaled for the user's currently selected preferred
     ///   text size.
     ///
-    /// - Note: If the style dictionary does not have
-    ///   a font for this text style the default preferred
-    ///   font is returned.
-    public func scaledFont(
+    /// ### 📝 Note
+    ///
+    /// The default preferred system font is returned if:
+    ///
+    /// - The ``CustomFont``'s style dictionary does not have a font for this text style.
+    /// - A matching `UIFont` can't be found for the ``CustomFont``'s family name.
+    public func scaledUIFont(
         forTextStyle textStyle: UIFont.TextStyle
     ) -> UIFont {
         guard
+            let styleDictionary = styleDictionary,
             let styleKey = StyleKey(textStyle),
-            let fontDescription = styleDictionary?[styleKey.rawValue],
-            let font = UIFont(
-                name: fontDescription.fontName,
-                size: fontDescription.fontSize
-            )
+            let matchingUIFont = matchingUIFont(for: styleKey, in: styleDictionary)
         else {
             return UIFont.preferredFont(forTextStyle: textStyle)
         }
         
-        let fontMetrics = UIFontMetrics(forTextStyle: textStyle)
+        return UIFontMetrics(forTextStyle: textStyle)
+            .scaledFont(for: matchingUIFont)
+    }
+    
+    
+    internal func matchingUIFont(
+        for styleKey: StyleKey,
+        in styleDictionary: StyleDictionary
+    ) -> UIFont? {
+        guard let customFontDescription = styleDictionary[styleKey.rawValue] else {
+            return nil
+        }
         
-        return fontMetrics.scaledFont(for: font)
+        return UIFont(
+            name: customFontDescription.fontName,
+            size: customFontDescription.fontSize
+        )
     }
 }
 

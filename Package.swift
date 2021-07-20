@@ -7,7 +7,7 @@ let package = Package(
     name: "CypherPoetSwiftUITypographyUtils",
     platforms: [
         .iOS(.v15),
-        .macOS(.v12),
+        .macOS(.v11),
         .tvOS(.v15),
         .watchOS(.v8),
     ],
@@ -42,6 +42,10 @@ let package = Package(
             exclude: [
                 "Data/README.md",
                 "Toolbox/README.md",
+            ],
+            resources: [
+                .process("Data"),
+                .process("Resources"),
             ]
         ),
     ]
