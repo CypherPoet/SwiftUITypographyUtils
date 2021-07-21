@@ -2,9 +2,9 @@
 
 <!-- Header Logo -->
 
-<div align="center">
+<!-- <div align="center">
    <img width="600px" src="./Extras/banner-logo.png" alt="Banner Logo">
-</div>
+</div> -->
 
 
 <!-- Badges -->
@@ -52,6 +52,7 @@ let package = Package(
     //...
     dependencies: [
         .package(
+            name: "CypherPoetSwiftUITypographyUtils",
             url: "https://github.com/CypherPoet/SwiftUITypographyUtils",
             .upToNextMinor(from: "0.1.0")
         ),
@@ -92,7 +93,7 @@ Contributions to `SwiftUITypographyUtils` are most welcome. Check out some of th
 - Xcode 13.0+ (Recommended)
 
 
-### 📜 Generating Documentation
+### 📜 Creating & Building Documentation
 
 Documentation is built with [Xcode's DocC](https://developer.apple.com/documentation/docc). More details are forthcoming here -- but for now,  see [Apple's guidance on how to build, run, and create DocC content](https://developer.apple.com/documentation/docc/api-reference-syntax).
 
