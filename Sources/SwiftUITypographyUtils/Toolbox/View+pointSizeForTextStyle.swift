@@ -1,10 +1,10 @@
 import SwiftUI
 
-#if os(macOS)
+#if canImport(Cocoa)
 
 import Cocoa
 
-extension View {
+extension Font {
     
     public static func pointSize(for textStyle: Font.TextStyle) -> CGFloat {
         NSFont.preferredFont(
@@ -14,9 +14,9 @@ extension View {
     }
 }
 
-#else
+#elseif canImport(UIKit)
 
-extension View {
+extension Font {
     
     public static func pointSize(for textStyle: Font.TextStyle) -> CGFloat {
         UIFont.preferredFont(
@@ -26,4 +26,13 @@ extension View {
     }
 }
 
+
 #endif
+
+
+extension View {
+    
+    public static func pointSize(for textStyle: Font.TextStyle) -> CGFloat {
+        Font.pointSize(for: textStyle)
+    }
+}
