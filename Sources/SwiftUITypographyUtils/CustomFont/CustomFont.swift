@@ -24,12 +24,15 @@ extension CustomFont {
         let fontName: String
     }
     
+    
     /// Create a ``CustomFont`` instance.
+    ///
     /// - Parameters:
     ///   - settingsFileName: Name of the Property List file (without the extension) that contains the style dictionary used to scale fonts for each
     ///   text style.
     ///   - bundle: The `Bundle` containing the `settingsFileName`.
     ///     - Default: `Bundle.main`.
+    ///
     /// - Throws: ``CustomFont/Error``
     public init(
         settingsFileName: String? = nil,
@@ -83,13 +86,8 @@ extension CustomFont {
     ///   scaled for the users currently selected preferred
     ///   text size.
     ///
-    /// - Note: If the style dictionary does not have
-    ///   a font for this text style the default system
-    ///   font is returned.
+    /// > Note: If the style dictionary does not have a font for this text style, the default system font is returned.
     internal func scaledFont(forTextStyle textStyle: Font.TextStyle) -> Font {
-        
-        #if canImport(UIKit)
-        
         guard
             let styleKey = StyleKey(textStyle),
             let fontDescription = styleDictionary?[styleKey.rawValue]
@@ -102,17 +100,5 @@ extension CustomFont {
             size: fontDescription.fontSize,
             relativeTo: textStyle
         )
-        
-        #elseif os(macOS)
-        
-        return Font(
-            nsFont(
-                forTextStyle: NSFont.TextStyle(fromSwiftUIFontTextStyle: textStyle)
-            )
-        )
-        
-        #else
-        preconditionFailure("Unknown operating system environment")
-        #endif
     }
 }

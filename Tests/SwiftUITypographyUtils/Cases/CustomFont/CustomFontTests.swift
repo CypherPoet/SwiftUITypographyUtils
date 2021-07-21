@@ -157,7 +157,7 @@ extension CustomFontTests {
         
         let expectedFont = Font.custom(
             "Futura",
-            size: Font.pointSize(for: .largeTitle),
+            size: 34.0,
             relativeTo: .largeTitle
         )
         

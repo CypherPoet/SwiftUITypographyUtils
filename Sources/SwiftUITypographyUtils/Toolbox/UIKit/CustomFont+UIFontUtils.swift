@@ -14,12 +14,9 @@ extension CustomFont {
     ///   scaled for the user's currently selected preferred
     ///   text size.
     ///
-    /// ### 📝 Note
-    ///
-    /// The default preferred system font is returned if:
-    ///
-    /// - The ``CustomFont``'s style dictionary does not have a font for this text style.
-    /// - A matching `UIFont` can't be found for the ``CustomFont``'s family name.
+    /// The default preferred system font is returned if: 
+    ///   - The ``CustomFont``'s style dictionary does not have a font for this text style.
+    ///   - A matching `UIFont` can't be found for the ``CustomFont``'s family name.
     public func scaledUIFont(
         forTextStyle textStyle: UIFont.TextStyle
     ) -> UIFont {
