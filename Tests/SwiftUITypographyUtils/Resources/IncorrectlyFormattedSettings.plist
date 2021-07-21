@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>largeTitle</key>
+	<dict>
+		<key>invalidPropertyName</key>
+		<string>ComicSans</string>
+		<key>fontSize</key>
+		<integer>34</integer>
+	</dict>
+	<key>inValidKeyName</key>
+	<dict>
+		<key>fontName</key>
+		<string>Futura</string>
+		<key>fontSize</key>
+		<integer>28</integer>
+	</dict>
+</dict>
+</plist>

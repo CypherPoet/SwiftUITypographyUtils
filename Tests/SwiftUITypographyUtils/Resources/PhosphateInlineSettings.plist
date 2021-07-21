@@ -72,12 +72,5 @@
 		<key>fontSize</key>
 		<integer>12</integer>
 	</dict>
-	<key>caption2</key>
-	<dict>
-		<key>fontName</key>
-		<string>Phosphate Inline</string>
-		<key>fontSize</key>
-		<integer>10</integer>
-	</dict>
 </dict>
 </plist>

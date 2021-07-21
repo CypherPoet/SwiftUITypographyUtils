@@ -1,5 +1,6 @@
 import XCTest
 import SwiftUI
+//import SwiftUITypographyUtils
 @testable import SwiftUITypographyUtils
 
 
@@ -21,15 +22,7 @@ extension CustomFontTests {
         // test method in the class.
         try super.setUpWithError()
 
-
         bundle = .module
-        
-        #if os(macOS)
-        _ = NSFont.registerFont(bundle: bundle, fontName: "Phosphate-Inline", fontExtension: "ttc")
-        #else
-        _ = UIFont.registerFont(bundle: bundle, fontName: "Phosphate-Inline", fontExtension: "ttc")
-        #endif
-        
         sut = try makeSUT()
     }
 
@@ -39,6 +32,7 @@ extension CustomFontTests {
         // This method is called after the invocation of each
         // test method in the class.
         sut = nil
+        settingsFileName = nil
         bundle = nil
         
         try super.tearDownWithError()
@@ -60,8 +54,8 @@ extension CustomFontTests {
 
     /// Helper to make the system under test from any default initializer
     /// and then test its initial conditions
-    private func makeSUTFromDefaults() -> SystemUnderTest {
-        try .init()
+    private func makeSUTFromDefaults() throws -> SystemUnderTest {
+        return try .init()
     }
 }
 
@@ -69,8 +63,12 @@ extension CustomFontTests {
 // MARK: - "Given" Helpers (Conditions Exist)
 extension CustomFontTests {
 
-    private func givenSomething() {
-        // some state or condition is established
+    private func givenCustomFontIsAddedToApplication() {
+        #if os(macOS)
+        _ = NSFont.registerFont(bundle: bundle, fontName: "Phosphate-Inline", fontExtension: "ttc")
+        #else
+        _ = UIFont.registerFont(bundle: bundle, fontName: "Phosphate-Inline", fontExtension: "ttc")
+        #endif
     }
 }
 
@@ -87,8 +85,8 @@ extension CustomFontTests {
 // MARK: - Test Initial Conditions From Default Initialization
 extension CustomFontTests {
 
-    func test_Init_WithDefaultProperties_SetsStyleDictionaryToNil() throws {
-        XCTAssertNil(sut.styleDictionary)
+    func test_Init_WithDefaultProperties_SuccessfullyInitializes() throws {
+        XCTAssertNoThrow(try makeSUTFromDefaults())
     }
 }
 
@@ -149,6 +147,38 @@ extension CustomFontTests {
     }
 }
 
+// MARK: - Test - scaledFontForTextStyle
+extension CustomFontTests {
+    
+    func test_ScaledFontForTextStyle_GivenStyleWithMatchingDictionarySetting_CreatesCustomFontFromDictionarySettings() throws {
+        settingsFileName = CustomFont.SettingsFileNames.futura
+        
+        sut = try makeSUT()
+        
+        let expectedFont = Font.custom(
+            "Futura",
+            size: Font.pointSize(for: .largeTitle),
+            relativeTo: .largeTitle
+        )
+        
+        let scaledFont = sut.scaledFont(forTextStyle: .largeTitle)
+        
+        XCTAssertEqual(expectedFont, scaledFont)
+    }
+    
+    
+    func test_ScaledFontForTextStyle_GivenStyleWithNoMatchingDictionarySetting_CreatesSystemFontForTextStyle() throws {
+        settingsFileName = CustomFont.SettingsFileNames.futura
+        
+        sut = try makeSUT()
+
+        let expectedFont = Font.system(.caption2)
+        let scaledFont = sut.scaledFont(forTextStyle: .caption2)
+        
+        XCTAssertEqual(expectedFont, scaledFont)
+    }
+}
+
 
 #if canImport(UIKit)
 
@@ -168,6 +198,8 @@ extension CustomFontTests {
     
     
     func test_scaledUIFontForTextStyle_GivenUIFontTextStyle_WhenUsingAnAddedFontThatHasAStyleDictionary_GetsPreferredFontForCustomFontTextStyle() throws {
+        givenCustomFontIsAddedToApplication()
+        
         settingsFileName = CustomFont.SettingsFileNames.phosphateInline
         
         sut = try makeSUT()

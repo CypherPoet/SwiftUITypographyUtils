@@ -136,35 +136,31 @@ extension CustomFont {
     ///   a font for this text style the default system
     ///   font is returned.
     internal func scaledFont(forTextStyle textStyle: Font.TextStyle) -> Font {
-        if #available(iOS 14.0, tvOS 14.0, watchOS 7.0, *) {
-            guard
-                let styleKey = StyleKey(textStyle),
-                let fontDescription = styleDictionary?[styleKey.rawValue]
-            else {
-                return Font.system(textStyle)
-            }
-            
-            return Font.custom(
-                fontDescription.fontName,
-                size: fontDescription.fontSize,
-                relativeTo: textStyle
-            )
-        } else {
-            #if os(macOS)
-            return Font(
-                nsFont(
-                    forTextStyle: NSFont.TextStyle(fromSwiftUIFontTextStyle: textStyle)
-                )
-            )
-            #else
-            // Fallback to UIKit methods for iOS 13
-            return Font(
-                scaledUIFont(
-                    forTextStyle: UIFont.TextStyle(fromSwiftUIFontTextStyle: textStyle)
-                )
-            )
-            #endif
+        #if canImport(UIKit)
+        guard
+            let styleKey = StyleKey(textStyle),
+            let fontDescription = styleDictionary?[styleKey.rawValue]
+        else {
+            return Font.system(textStyle)
         }
+        
+        return Font.custom(
+            fontDescription.fontName,
+            size: fontDescription.fontSize,
+            relativeTo: textStyle
+        )
+        
+        #elseif canImport(Cocoa)
+        
+        return Font(
+            nsFont(
+                forTextStyle: NSFont.TextStyle(fromSwiftUIFontTextStyle: textStyle)
+            )
+        )
+        
+        #else
+        preconditionFailure("Unknown operating system environment")
+        #endif
     }
 }
 
