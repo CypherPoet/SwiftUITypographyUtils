@@ -53,7 +53,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/CypherPoet/SwiftUITypographyUtils",
-            .exact("0.0.1")
+            .upToNextMinor(from: "0.1.0")
         ),
     ],
     //...
