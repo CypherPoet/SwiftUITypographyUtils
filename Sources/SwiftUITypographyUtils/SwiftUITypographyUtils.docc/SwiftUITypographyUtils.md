@@ -11,3 +11,9 @@ _Utilities for typographic tailoring in SwiftUI._
 ### Essentials
 
 - ``CustomFont``
+
+
+### SwiftUI Environment Values
+
+- ``CustomFontKey``
+- ``CustomFontSizeKey``

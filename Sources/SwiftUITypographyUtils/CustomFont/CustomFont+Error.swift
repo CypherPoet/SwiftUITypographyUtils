@@ -9,10 +9,3 @@ extension CustomFont {
         case settingsFileDecodingFailed(DecodingError)
     }
 }
-
-
-//extension CustomFont.Error: Equatable {
-//    public static func == (lhs: CustomFont.Error, rhs: CustomFont.Error) -> Bool {
-//        <#code#>
-//    }
-//}

@@ -1,12 +1,11 @@
-#if canImport(AppKit)
+#if os(macOS)
 
-import AppKit
+import Cocoa
 
 
 extension NSFont {
 
     // This extension is taken from this SO answer https://stackoverflow.com/a/36871032/5508175
-    
     
     static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) -> Bool {
 
