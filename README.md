@@ -52,9 +52,8 @@ let package = Package(
     //...
     dependencies: [
         .package(
-            name: "CypherPoetSwiftUITypographyUtils",
             url: "https://github.com/CypherPoet/SwiftUITypographyUtils",
-            .upToNextMinor(from: "0.1.0")
+            .upToNextMinor(from: .init(0, 2, 0))
         ),
     ],
     //...
