@@ -12,7 +12,9 @@ public struct CustomFont {
 
 // MARK: -  Public Static Instances
 extension CustomFont {
-    // TODO: Remove this?
+
+    /// An "empty" ``CustomFont`` instance that provides utility for platform-specific
+    /// system font settings.
     public static let `default` = CustomFont()
 }
 
@@ -63,6 +65,7 @@ extension CustomFont {
 }
 
 
+// MARK: - Private Helpers
 extension CustomFont {
     
     private func loadSettings(inFileAt url: URL) throws -> Data {
