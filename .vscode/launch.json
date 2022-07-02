@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Test SwiftUITypographyUtils",
+      "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+      "args": [".build/debug/SwiftUITypographyUtilsPackageTests.xctest"],
+      "cwd": "${workspaceFolder:SwiftUITypographyUtils}",
+
+      // https://github.com/swift-server/vscode-swift#automatic-task-creation
+      "preLaunchTask": "swift: Build All"
+    }
+  ]
+}

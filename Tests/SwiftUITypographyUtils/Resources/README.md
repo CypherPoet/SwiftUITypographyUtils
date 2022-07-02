@@ -1,3 +1,3 @@
-# Test Resources
+# `SwiftUITypographyUtils` Test Resources
 
-Place "asset"-like resources used for testing here. (Examples: images, custom fonts)
+Place files in this directory related to test resources (Examples: sample JSON responses, mock data, sample images assets).

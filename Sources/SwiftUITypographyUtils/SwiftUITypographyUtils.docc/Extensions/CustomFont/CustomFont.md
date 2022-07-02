@@ -1,6 +1,6 @@
 # ``SwiftUITypographyUtils/CustomFont``
 
-A structured apporach to styling and dynamically scaling custom fonts.
+A structured approach to styling and dynamically scaling custom fonts.
 
 ## Overview
 
@@ -8,6 +8,6 @@ A structured apporach to styling and dynamically scaling custom fonts.
 
 ## Topics
 
-### Creating ``CustomFont`` Settings
+### Configuring CustomFont Settings
 
-- <doc:/Configuration>
+- <doc:Configuration>
