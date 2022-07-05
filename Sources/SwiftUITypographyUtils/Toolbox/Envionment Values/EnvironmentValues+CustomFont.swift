@@ -2,7 +2,7 @@ import SwiftUI
 
 
 public struct CustomFontKey: EnvironmentKey {
-    public static var defaultValue = CustomFont.default
+    public static var defaultValue = CustomFont.systemDefault
 }
 
 

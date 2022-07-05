@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA04521528733741006637FA /* WalletTransactionInfoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA04521428733741006637FA /* WalletTransactionInfoListItemView.swift */; };
+		AA045218287338F7006637FA /* WalletTransactionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA045217287338F7006637FA /* WalletTransactionInfo.swift */; };
+		AA04521A2873A36B006637FA /* FontDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0452192873A36B006637FA /* FontDisplayMode.swift */; };
+		AA6553C42870148A005D1EE5 /* SwiftUITypographyUtilsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6553C32870148A005D1EE5 /* SwiftUITypographyUtilsDemoApp.swift */; };
+		AA6553C62870148A005D1EE5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6553C52870148A005D1EE5 /* RootView.swift */; };
+		AA6553C82870148C005D1EE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6553C72870148C005D1EE5 /* Assets.xcassets */; };
+		AA6553CC2870148C005D1EE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6553CB2870148C005D1EE5 /* Preview Assets.xcassets */; };
+		AA6553D528701543005D1EE5 /* SwiftUITypographyUtils in Frameworks */ = {isa = PBXBuildFile; productRef = AA6553D428701543005D1EE5 /* SwiftUITypographyUtils */; };
+		AA6553DD2870A617005D1EE5 /* MainAppViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6553DC2870A617005D1EE5 /* MainAppViewer.swift */; };
+		AA6553E02870A7A0005D1EE5 /* CustomFontDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6553DF2870A7A0005D1EE5 /* CustomFontDemoView.swift */; };
+		AA6553E52870B9D1005D1EE5 /* CustomFont+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6553E42870B9D1005D1EE5 /* CustomFont+Utils.swift */; };
+		AA6553F52871DE38005D1EE5 /* Prometo-XBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553E72871DE35005D1EE5 /* Prometo-XBold.ttf */; };
+		AA6553F62871DE38005D1EE5 /* Prometo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553E82871DE35005D1EE5 /* Prometo-Thin.ttf */; };
+		AA6553F72871DE38005D1EE5 /* Prometo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553E92871DE35005D1EE5 /* Prometo-Italic.ttf */; };
+		AA6553F82871DE38005D1EE5 /* Prometo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553EA2871DE35005D1EE5 /* Prometo-BoldItalic.ttf */; };
+		AA6553F92871DE38005D1EE5 /* Prometo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553EB2871DE36005D1EE5 /* Prometo-Medium.ttf */; };
+		AA6553FA2871DE38005D1EE5 /* Prometo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553EC2871DE36005D1EE5 /* Prometo-Black.ttf */; };
+		AA6553FB2871DE38005D1EE5 /* Prometo-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553ED2871DE36005D1EE5 /* Prometo-MediumItalic.ttf */; };
+		AA6553FC2871DE38005D1EE5 /* Prometo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553EE2871DE36005D1EE5 /* Prometo-Bold.ttf */; };
+		AA6553FD2871DE38005D1EE5 /* Prometo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553EF2871DE37005D1EE5 /* Prometo-LightItalic.ttf */; };
+		AA6553FE2871DE38005D1EE5 /* Prometo-XBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553F02871DE37005D1EE5 /* Prometo-XBoldItalic.ttf */; };
+		AA6553FF2871DE38005D1EE5 /* Prometo-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553F12871DE37005D1EE5 /* Prometo-ThinItalic.ttf */; };
+		AA6554002871DE38005D1EE5 /* Prometo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553F22871DE38005D1EE5 /* Prometo-Light.ttf */; };
+		AA6554012871DE38005D1EE5 /* Prometo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553F32871DE38005D1EE5 /* Prometo-BlackItalic.ttf */; };
+		AA6554022871DE38005D1EE5 /* Prometo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6553F42871DE38005D1EE5 /* Prometo.ttf */; };
+		AA6554152871EA82005D1EE5 /* PrometoSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA6554142871E790005D1EE5 /* PrometoSettings.plist */; };
+		AA655426287237BB005D1EE5 /* Soleto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554062871E00E005D1EE5 /* Soleto-Light.ttf */; };
+		AA655427287237BB005D1EE5 /* SoletoSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA6554122871E01D005D1EE5 /* SoletoSettings.plist */; };
+		AA655428287237BB005D1EE5 /* Soleto-XBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA65540E2871E011005D1EE5 /* Soleto-XBold.ttf */; };
+		AA655429287237BB005D1EE5 /* Soleto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA65540C2871E010005D1EE5 /* Soleto-LightItalic.ttf */; };
+		AA65542A287237BB005D1EE5 /* Soleto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554092871E00F005D1EE5 /* Soleto-Black.ttf */; };
+		AA65542B287237BB005D1EE5 /* Soleto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA65540D2871E010005D1EE5 /* Soleto-BlackItalic.ttf */; };
+		AA65542C287237BB005D1EE5 /* Soleto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554082871E00E005D1EE5 /* Soleto-MediumItalic.ttf */; };
+		AA65542D287237BB005D1EE5 /* Soleto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA65540F2871E011005D1EE5 /* Soleto-Bold.ttf */; };
+		AA65542E287237BB005D1EE5 /* Soleto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA65540B2871E00F005D1EE5 /* Soleto-ThinItalic.ttf */; };
+		AA65542F287237BB005D1EE5 /* Soleto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554042871E00D005D1EE5 /* Soleto-Thin.ttf */; };
+		AA655430287237BB005D1EE5 /* Soleto-XBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA65540A2871E00F005D1EE5 /* Soleto-XBoldItalic.ttf */; };
+		AA655431287237BB005D1EE5 /* Soleto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554052871E00E005D1EE5 /* Soleto-Italic.ttf */; };
+		AA655432287237BB005D1EE5 /* Soleto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554072871E00E005D1EE5 /* Soleto-Medium.ttf */; };
+		AA655433287237BB005D1EE5 /* Soleto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554102871E012005D1EE5 /* Soleto-BoldItalic.ttf */; };
+		AA655434287237BB005D1EE5 /* Soleto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA6554112871E012005D1EE5 /* Soleto-Regular.ttf */; };
+		AA6D220A2873D76D00B25954 /* CustomFontDemoView+ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D22092873D76D00B25954 /* CustomFontDemoView+ListHeaderView.swift */; };
+		AA6D220C2873D84F00B25954 /* FontDisplayModeFilterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D220B2873D84F00B25954 /* FontDisplayModeFilterCarouselView.swift */; };
+		AA6D220E2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D220D2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift */; };
+		AA98603A2875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9860392875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift */; };
+		AA98603E2875259B0001ACE8 /* UserDefaults+CustomKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA98603D2875259B0001ACE8 /* UserDefaults+CustomKeys.swift */; };
+		AAC2484E2873CE54003E1454 /* AllianceNumberOneSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC2484D2873CE54003E1454 /* AllianceNumberOneSettings.plist */; };
+		AAC2485D2873CE99003E1454 /* Alliance No.1 SemiBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2484F2873CE98003E1454 /* Alliance No.1 SemiBold Italic.otf */; };
+		AAC2485E2873CE99003E1454 /* Alliance No.1 ExtraBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248502873CE98003E1454 /* Alliance No.1 ExtraBold Italic.otf */; };
+		AAC2485F2873CE99003E1454 /* Alliance No.1 Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248512873CE98003E1454 /* Alliance No.1 Bold Italic.otf */; };
+		AAC248602873CE99003E1454 /* Alliance No.1 SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248522873CE98003E1454 /* Alliance No.1 SemiBold.otf */; };
+		AAC248612873CE99003E1454 /* Alliance No.1 Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248532873CE98003E1454 /* Alliance No.1 Medium Italic.otf */; };
+		AAC248622873CE99003E1454 /* Alliance No.1 Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248542873CE99003E1454 /* Alliance No.1 Regular Italic.otf */; };
+		AAC248632873CE99003E1454 /* Alliance No.1 Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248552873CE99003E1454 /* Alliance No.1 Black Italic.otf */; };
+		AAC248642873CE99003E1454 /* Alliance No.1 Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248562873CE99003E1454 /* Alliance No.1 Bold.otf */; };
+		AAC248652873CE99003E1454 /* Alliance No.1 Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248572873CE99003E1454 /* Alliance No.1 Light Italic.otf */; };
+		AAC248662873CE99003E1454 /* Alliance No.1 Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248582873CE99003E1454 /* Alliance No.1 Light.otf */; };
+		AAC248672873CE99003E1454 /* Alliance No.1 Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248592873CE99003E1454 /* Alliance No.1 Black.otf */; };
+		AAC248682873CE99003E1454 /* Alliance No.1 ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */; };
+		AAC248692873CE99003E1454 /* Alliance No.1 Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */; };
+		AAC2486A2873CE99003E1454 /* Alliance No.1 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA04521428733741006637FA /* WalletTransactionInfoListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionInfoListItemView.swift; sourceTree = "<group>"; };
+		AA045217287338F7006637FA /* WalletTransactionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionInfo.swift; sourceTree = "<group>"; };
+		AA0452192873A36B006637FA /* FontDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDisplayMode.swift; sourceTree = "<group>"; };
+		AA6553C02870148A005D1EE5 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA6553C32870148A005D1EE5 /* SwiftUITypographyUtilsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITypographyUtilsDemoApp.swift; sourceTree = "<group>"; };
+		AA6553C52870148A005D1EE5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AA6553C72870148C005D1EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA6553C92870148C005D1EE5 /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
+		AA6553CB2870148C005D1EE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA6553D228701507005D1EE5 /* SwiftUITypographyUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUITypographyUtils; path = ../../..; sourceTree = "<group>"; };
+		AA6553DC2870A617005D1EE5 /* MainAppViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewer.swift; sourceTree = "<group>"; };
+		AA6553DF2870A7A0005D1EE5 /* CustomFontDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontDemoView.swift; sourceTree = "<group>"; };
+		AA6553E42870B9D1005D1EE5 /* CustomFont+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomFont+Utils.swift"; sourceTree = "<group>"; };
+		AA6553E72871DE35005D1EE5 /* Prometo-XBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-XBold.ttf"; sourceTree = "<group>"; };
+		AA6553E82871DE35005D1EE5 /* Prometo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-Thin.ttf"; sourceTree = "<group>"; };
+		AA6553E92871DE35005D1EE5 /* Prometo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-Italic.ttf"; sourceTree = "<group>"; };
+		AA6553EA2871DE35005D1EE5 /* Prometo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AA6553EB2871DE36005D1EE5 /* Prometo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-Medium.ttf"; sourceTree = "<group>"; };
+		AA6553EC2871DE36005D1EE5 /* Prometo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-Black.ttf"; sourceTree = "<group>"; };
+		AA6553ED2871DE36005D1EE5 /* Prometo-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-MediumItalic.ttf"; sourceTree = "<group>"; };
+		AA6553EE2871DE36005D1EE5 /* Prometo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-Bold.ttf"; sourceTree = "<group>"; };
+		AA6553EF2871DE37005D1EE5 /* Prometo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-LightItalic.ttf"; sourceTree = "<group>"; };
+		AA6553F02871DE37005D1EE5 /* Prometo-XBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-XBoldItalic.ttf"; sourceTree = "<group>"; };
+		AA6553F12871DE37005D1EE5 /* Prometo-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AA6553F22871DE38005D1EE5 /* Prometo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-Light.ttf"; sourceTree = "<group>"; };
+		AA6553F32871DE38005D1EE5 /* Prometo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prometo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AA6553F42871DE38005D1EE5 /* Prometo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Prometo.ttf; sourceTree = "<group>"; };
+		AA6554042871E00D005D1EE5 /* Soleto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Thin.ttf"; sourceTree = "<group>"; };
+		AA6554052871E00E005D1EE5 /* Soleto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Italic.ttf"; sourceTree = "<group>"; };
+		AA6554062871E00E005D1EE5 /* Soleto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Light.ttf"; sourceTree = "<group>"; };
+		AA6554072871E00E005D1EE5 /* Soleto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Medium.ttf"; sourceTree = "<group>"; };
+		AA6554082871E00E005D1EE5 /* Soleto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		AA6554092871E00F005D1EE5 /* Soleto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Black.ttf"; sourceTree = "<group>"; };
+		AA65540A2871E00F005D1EE5 /* Soleto-XBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-XBoldItalic.ttf"; sourceTree = "<group>"; };
+		AA65540B2871E00F005D1EE5 /* Soleto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AA65540C2871E010005D1EE5 /* Soleto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-LightItalic.ttf"; sourceTree = "<group>"; };
+		AA65540D2871E010005D1EE5 /* Soleto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AA65540E2871E011005D1EE5 /* Soleto-XBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-XBold.ttf"; sourceTree = "<group>"; };
+		AA65540F2871E011005D1EE5 /* Soleto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Bold.ttf"; sourceTree = "<group>"; };
+		AA6554102871E012005D1EE5 /* Soleto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AA6554112871E012005D1EE5 /* Soleto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soleto-Regular.ttf"; sourceTree = "<group>"; };
+		AA6554122871E01D005D1EE5 /* SoletoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SoletoSettings.plist; sourceTree = "<group>"; };
+		AA6554142871E790005D1EE5 /* PrometoSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrometoSettings.plist; sourceTree = "<group>"; };
+		AA6D22092873D76D00B25954 /* CustomFontDemoView+ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomFontDemoView+ListHeaderView.swift"; sourceTree = "<group>"; };
+		AA6D220B2873D84F00B25954 /* FontDisplayModeFilterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDisplayModeFilterCarouselView.swift; sourceTree = "<group>"; };
+		AA6D220D2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDisplayModeFilterChipView.swift; sourceTree = "<group>"; };
+		AA9860392875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WalletTransactionInfo+PreviewItems.swift"; sourceTree = "<group>"; };
+		AA98603D2875259B0001ACE8 /* UserDefaults+CustomKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+CustomKeys.swift"; sourceTree = "<group>"; };
+		AAC2484D2873CE54003E1454 /* AllianceNumberOneSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = AllianceNumberOneSettings.plist; path = DemoApp/Resources/Fonts/Soleto/AllianceNumberOneSettings.plist; sourceTree = SOURCE_ROOT; };
+		AAC2484F2873CE98003E1454 /* Alliance No.1 SemiBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 SemiBold Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 SemiBold Italic.otf"; sourceTree = "<group>"; };
+		AAC248502873CE98003E1454 /* Alliance No.1 ExtraBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 ExtraBold Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 ExtraBold Italic.otf"; sourceTree = "<group>"; };
+		AAC248512873CE98003E1454 /* Alliance No.1 Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Bold Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Bold Italic.otf"; sourceTree = "<group>"; };
+		AAC248522873CE98003E1454 /* Alliance No.1 SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alliance No.1 SemiBold.otf"; sourceTree = "<group>"; };
+		AAC248532873CE98003E1454 /* Alliance No.1 Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Medium Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Medium Italic.otf"; sourceTree = "<group>"; };
+		AAC248542873CE99003E1454 /* Alliance No.1 Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Regular Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Regular Italic.otf"; sourceTree = "<group>"; };
+		AAC248552873CE99003E1454 /* Alliance No.1 Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Black Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Black Italic.otf"; sourceTree = "<group>"; };
+		AAC248562873CE99003E1454 /* Alliance No.1 Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alliance No.1 Bold.otf"; sourceTree = "<group>"; };
+		AAC248572873CE99003E1454 /* Alliance No.1 Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Light Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Light Italic.otf"; sourceTree = "<group>"; };
+		AAC248582873CE99003E1454 /* Alliance No.1 Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Light.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Light.otf"; sourceTree = "<group>"; };
+		AAC248592873CE99003E1454 /* Alliance No.1 Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Black.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Black.otf"; sourceTree = "<group>"; };
+		AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alliance No.1 ExtraBold.otf"; sourceTree = "<group>"; };
+		AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Medium.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Medium.otf"; sourceTree = "<group>"; };
+		AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Regular.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Regular.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA6553BD2870148A005D1EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6553D528701543005D1EE5 /* SwiftUITypographyUtils in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA04521228733741006637FA /* View Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA98603B287523960001ACE8 /* Font Display Mode Filter */,
+				AA04521328733741006637FA /* Wallet Transactions */,
+			);
+			path = "View Components";
+			sourceTree = "<group>";
+		};
+		AA04521328733741006637FA /* Wallet Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				AA04521428733741006637FA /* WalletTransactionInfoListItemView.swift */,
+			);
+			path = "Wallet Transactions";
+			sourceTree = "<group>";
+		};
+		AA045216287338DF006637FA /* Wallet Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				AA045217287338F7006637FA /* WalletTransactionInfo.swift */,
+			);
+			path = "Wallet Transactions";
+			sourceTree = "<group>";
+		};
+		AA22D4A52873CDA40022B840 /* Alliance No 1 */ = {
+			isa = PBXGroup;
+			children = (
+				AAC248552873CE99003E1454 /* Alliance No.1 Black Italic.otf */,
+				AAC248592873CE99003E1454 /* Alliance No.1 Black.otf */,
+				AAC248512873CE98003E1454 /* Alliance No.1 Bold Italic.otf */,
+				AAC248562873CE99003E1454 /* Alliance No.1 Bold.otf */,
+				AAC248502873CE98003E1454 /* Alliance No.1 ExtraBold Italic.otf */,
+				AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */,
+				AAC248572873CE99003E1454 /* Alliance No.1 Light Italic.otf */,
+				AAC248582873CE99003E1454 /* Alliance No.1 Light.otf */,
+				AAC248532873CE98003E1454 /* Alliance No.1 Medium Italic.otf */,
+				AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */,
+				AAC248542873CE99003E1454 /* Alliance No.1 Regular Italic.otf */,
+				AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */,
+				AAC2484F2873CE98003E1454 /* Alliance No.1 SemiBold Italic.otf */,
+				AAC248522873CE98003E1454 /* Alliance No.1 SemiBold.otf */,
+				AAC2484D2873CE54003E1454 /* AllianceNumberOneSettings.plist */,
+			);
+			path = "Alliance No 1";
+			sourceTree = "<group>";
+		};
+		AA22D4A62873CDB10022B840 /* Alliance No 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Alliance No 2";
+			sourceTree = "<group>";
+		};
+		AA6553B72870148A005D1EE5 = {
+			isa = PBXGroup;
+			children = (
+				AA6553D228701507005D1EE5 /* SwiftUITypographyUtils */,
+				AA6553C22870148A005D1EE5 /* DemoApp */,
+				AA6553D328701543005D1EE5 /* Frameworks */,
+				AA6553C12870148A005D1EE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA6553C12870148A005D1EE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553C02870148A005D1EE5 /* DemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA6553C22870148A005D1EE5 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553C92870148C005D1EE5 /* DemoApp.entitlements */,
+				AA6553C32870148A005D1EE5 /* SwiftUITypographyUtilsDemoApp.swift */,
+				AA6553D62870A51F005D1EE5 /* Data */,
+				AA6553CA2870148C005D1EE5 /* Preview Content */,
+				AA6553D82870A534005D1EE5 /* Resources */,
+				AA6553D92870A54A005D1EE5 /* Scene Views */,
+				AA6553E22870B9AC005D1EE5 /* Toolbox */,
+				AA04521228733741006637FA /* View Components */,
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		AA6553CA2870148C005D1EE5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553CB2870148C005D1EE5 /* Preview Assets.xcassets */,
+				AA986036287517670001ACE8 /* Preview Data */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA6553D328701543005D1EE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA6553D62870A51F005D1EE5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA0452192873A36B006637FA /* FontDisplayMode.swift */,
+				AA045216287338DF006637FA /* Wallet Transactions */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AA6553D82870A534005D1EE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553C72870148C005D1EE5 /* Assets.xcassets */,
+				AA6553E12870B955005D1EE5 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA6553D92870A54A005D1EE5 /* Scene Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553DC2870A617005D1EE5 /* MainAppViewer.swift */,
+				AA6553C52870148A005D1EE5 /* RootView.swift */,
+				AA6553DE2870A78F005D1EE5 /* Custom Font */,
+			);
+			path = "Scene Views";
+			sourceTree = "<group>";
+		};
+		AA6553DE2870A78F005D1EE5 /* Custom Font */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553DF2870A7A0005D1EE5 /* CustomFontDemoView.swift */,
+				AA6D22092873D76D00B25954 /* CustomFontDemoView+ListHeaderView.swift */,
+			);
+			path = "Custom Font";
+			sourceTree = "<group>";
+		};
+		AA6553E12870B955005D1EE5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AA22D4A52873CDA40022B840 /* Alliance No 1 */,
+				AA22D4A62873CDB10022B840 /* Alliance No 2 */,
+				AA6553E62871DE04005D1EE5 /* Prometo */,
+				AA6554032871DEC1005D1EE5 /* Soleto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AA6553E22870B9AC005D1EE5 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553E32870B9BC005D1EE5 /* CustomFont */,
+				AA98603C2875258C0001ACE8 /* User Defaults */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+		AA6553E32870B9BC005D1EE5 /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				AA6553E42870B9D1005D1EE5 /* CustomFont+Utils.swift */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		AA6553E62871DE04005D1EE5 /* Prometo */ = {
+			isa = PBXGroup;
+			children = (
+				AA6554142871E790005D1EE5 /* PrometoSettings.plist */,
+				AA6553EC2871DE36005D1EE5 /* Prometo-Black.ttf */,
+				AA6553F32871DE38005D1EE5 /* Prometo-BlackItalic.ttf */,
+				AA6553EE2871DE36005D1EE5 /* Prometo-Bold.ttf */,
+				AA6553EA2871DE35005D1EE5 /* Prometo-BoldItalic.ttf */,
+				AA6553E92871DE35005D1EE5 /* Prometo-Italic.ttf */,
+				AA6553F22871DE38005D1EE5 /* Prometo-Light.ttf */,
+				AA6553EF2871DE37005D1EE5 /* Prometo-LightItalic.ttf */,
+				AA6553EB2871DE36005D1EE5 /* Prometo-Medium.ttf */,
+				AA6553ED2871DE36005D1EE5 /* Prometo-MediumItalic.ttf */,
+				AA6553E82871DE35005D1EE5 /* Prometo-Thin.ttf */,
+				AA6553F12871DE37005D1EE5 /* Prometo-ThinItalic.ttf */,
+				AA6553E72871DE35005D1EE5 /* Prometo-XBold.ttf */,
+				AA6553F02871DE37005D1EE5 /* Prometo-XBoldItalic.ttf */,
+				AA6553F42871DE38005D1EE5 /* Prometo.ttf */,
+			);
+			path = Prometo;
+			sourceTree = "<group>";
+		};
+		AA6554032871DEC1005D1EE5 /* Soleto */ = {
+			isa = PBXGroup;
+			children = (
+				AA6554092871E00F005D1EE5 /* Soleto-Black.ttf */,
+				AA65540D2871E010005D1EE5 /* Soleto-BlackItalic.ttf */,
+				AA65540F2871E011005D1EE5 /* Soleto-Bold.ttf */,
+				AA6554102871E012005D1EE5 /* Soleto-BoldItalic.ttf */,
+				AA6554052871E00E005D1EE5 /* Soleto-Italic.ttf */,
+				AA6554062871E00E005D1EE5 /* Soleto-Light.ttf */,
+				AA65540C2871E010005D1EE5 /* Soleto-LightItalic.ttf */,
+				AA6554072871E00E005D1EE5 /* Soleto-Medium.ttf */,
+				AA6554122871E01D005D1EE5 /* SoletoSettings.plist */,
+				AA6554082871E00E005D1EE5 /* Soleto-MediumItalic.ttf */,
+				AA6554112871E012005D1EE5 /* Soleto-Regular.ttf */,
+				AA6554042871E00D005D1EE5 /* Soleto-Thin.ttf */,
+				AA65540B2871E00F005D1EE5 /* Soleto-ThinItalic.ttf */,
+				AA65540E2871E011005D1EE5 /* Soleto-XBold.ttf */,
+				AA65540A2871E00F005D1EE5 /* Soleto-XBoldItalic.ttf */,
+			);
+			path = Soleto;
+			sourceTree = "<group>";
+		};
+		AA986036287517670001ACE8 /* Preview Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA9860392875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift */,
+			);
+			path = "Preview Data";
+			sourceTree = "<group>";
+		};
+		AA98603B287523960001ACE8 /* Font Display Mode Filter */ = {
+			isa = PBXGroup;
+			children = (
+				AA6D220B2873D84F00B25954 /* FontDisplayModeFilterCarouselView.swift */,
+				AA6D220D2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift */,
+			);
+			path = "Font Display Mode Filter";
+			sourceTree = "<group>";
+		};
+		AA98603C2875258C0001ACE8 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				AA98603D2875259B0001ACE8 /* UserDefaults+CustomKeys.swift */,
+			);
+			path = "User Defaults";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA6553BF2870148A005D1EE5 /* DemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA6553CF2870148C005D1EE5 /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildPhases = (
+				AA6553BC2870148A005D1EE5 /* Sources */,
+				AA6553BD2870148A005D1EE5 /* Frameworks */,
+				AA6553BE2870148A005D1EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoApp;
+			packageProductDependencies = (
+				AA6553D428701543005D1EE5 /* SwiftUITypographyUtils */,
+			);
+			productName = DemoApp;
+			productReference = AA6553C02870148A005D1EE5 /* DemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA6553B82870148A005D1EE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AA6553BF2870148A005D1EE5 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AA6553BB2870148A005D1EE5 /* Build configuration list for PBXProject "DemoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA6553B72870148A005D1EE5;
+			productRefGroup = AA6553C12870148A005D1EE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA6553BF2870148A005D1EE5 /* DemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA6553BE2870148A005D1EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA655431287237BB005D1EE5 /* Soleto-Italic.ttf in Resources */,
+				AAC2485E2873CE99003E1454 /* Alliance No.1 ExtraBold Italic.otf in Resources */,
+				AA655430287237BB005D1EE5 /* Soleto-XBoldItalic.ttf in Resources */,
+				AA65542B287237BB005D1EE5 /* Soleto-BlackItalic.ttf in Resources */,
+				AA6554152871EA82005D1EE5 /* PrometoSettings.plist in Resources */,
+				AAC2484E2873CE54003E1454 /* AllianceNumberOneSettings.plist in Resources */,
+				AAC248652873CE99003E1454 /* Alliance No.1 Light Italic.otf in Resources */,
+				AA6553FB2871DE38005D1EE5 /* Prometo-MediumItalic.ttf in Resources */,
+				AA65542D287237BB005D1EE5 /* Soleto-Bold.ttf in Resources */,
+				AA6553CC2870148C005D1EE5 /* Preview Assets.xcassets in Resources */,
+				AA6553FC2871DE38005D1EE5 /* Prometo-Bold.ttf in Resources */,
+				AA6554012871DE38005D1EE5 /* Prometo-BlackItalic.ttf in Resources */,
+				AA655429287237BB005D1EE5 /* Soleto-LightItalic.ttf in Resources */,
+				AA6553F92871DE38005D1EE5 /* Prometo-Medium.ttf in Resources */,
+				AA655433287237BB005D1EE5 /* Soleto-BoldItalic.ttf in Resources */,
+				AA6554002871DE38005D1EE5 /* Prometo-Light.ttf in Resources */,
+				AAC248672873CE99003E1454 /* Alliance No.1 Black.otf in Resources */,
+				AAC2485D2873CE99003E1454 /* Alliance No.1 SemiBold Italic.otf in Resources */,
+				AAC2485F2873CE99003E1454 /* Alliance No.1 Bold Italic.otf in Resources */,
+				AAC248662873CE99003E1454 /* Alliance No.1 Light.otf in Resources */,
+				AA65542A287237BB005D1EE5 /* Soleto-Black.ttf in Resources */,
+				AA6553F52871DE38005D1EE5 /* Prometo-XBold.ttf in Resources */,
+				AA65542C287237BB005D1EE5 /* Soleto-MediumItalic.ttf in Resources */,
+				AA65542F287237BB005D1EE5 /* Soleto-Thin.ttf in Resources */,
+				AA6553F62871DE38005D1EE5 /* Prometo-Thin.ttf in Resources */,
+				AA655427287237BB005D1EE5 /* SoletoSettings.plist in Resources */,
+				AA6553C82870148C005D1EE5 /* Assets.xcassets in Resources */,
+				AA655432287237BB005D1EE5 /* Soleto-Medium.ttf in Resources */,
+				AA6553FF2871DE38005D1EE5 /* Prometo-ThinItalic.ttf in Resources */,
+				AA6553FA2871DE38005D1EE5 /* Prometo-Black.ttf in Resources */,
+				AAC248602873CE99003E1454 /* Alliance No.1 SemiBold.otf in Resources */,
+				AAC248612873CE99003E1454 /* Alliance No.1 Medium Italic.otf in Resources */,
+				AAC248632873CE99003E1454 /* Alliance No.1 Black Italic.otf in Resources */,
+				AAC248692873CE99003E1454 /* Alliance No.1 Medium.otf in Resources */,
+				AA655434287237BB005D1EE5 /* Soleto-Regular.ttf in Resources */,
+				AAC248682873CE99003E1454 /* Alliance No.1 ExtraBold.otf in Resources */,
+				AAC248642873CE99003E1454 /* Alliance No.1 Bold.otf in Resources */,
+				AAC2486A2873CE99003E1454 /* Alliance No.1 Regular.otf in Resources */,
+				AA655428287237BB005D1EE5 /* Soleto-XBold.ttf in Resources */,
+				AA6553F82871DE38005D1EE5 /* Prometo-BoldItalic.ttf in Resources */,
+				AA655426287237BB005D1EE5 /* Soleto-Light.ttf in Resources */,
+				AA6553FE2871DE38005D1EE5 /* Prometo-XBoldItalic.ttf in Resources */,
+				AAC248622873CE99003E1454 /* Alliance No.1 Regular Italic.otf in Resources */,
+				AA6554022871DE38005D1EE5 /* Prometo.ttf in Resources */,
+				AA6553F72871DE38005D1EE5 /* Prometo-Italic.ttf in Resources */,
+				AA65542E287237BB005D1EE5 /* Soleto-ThinItalic.ttf in Resources */,
+				AA6553FD2871DE38005D1EE5 /* Prometo-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA6553BC2870148A005D1EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6553C62870148A005D1EE5 /* RootView.swift in Sources */,
+				AA6553E52870B9D1005D1EE5 /* CustomFont+Utils.swift in Sources */,
+				AA6D220C2873D84F00B25954 /* FontDisplayModeFilterCarouselView.swift in Sources */,
+				AA04521A2873A36B006637FA /* FontDisplayMode.swift in Sources */,
+				AA6553E02870A7A0005D1EE5 /* CustomFontDemoView.swift in Sources */,
+				AA98603A2875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift in Sources */,
+				AA04521528733741006637FA /* WalletTransactionInfoListItemView.swift in Sources */,
+				AA6D220E2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift in Sources */,
+				AA6553C42870148A005D1EE5 /* SwiftUITypographyUtilsDemoApp.swift in Sources */,
+				AA98603E2875259B0001ACE8 /* UserDefaults+CustomKeys.swift in Sources */,
+				AA045218287338F7006637FA /* WalletTransactionInfo.swift in Sources */,
+				AA6553DD2870A617005D1EE5 /* MainAppViewer.swift in Sources */,
+				AA6D220A2873D76D00B25954 /* CustomFontDemoView+ListHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA6553CD2870148C005D1EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA6553CE2870148C005D1EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AA6553D02870148C005D1EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.CypherPoet.SwiftUITypographyUtils.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA6553D12870148C005D1EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QRXXH2RKAG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.CypherPoet.SwiftUITypographyUtils.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA6553BB2870148A005D1EE5 /* Build configuration list for PBXProject "DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6553CD2870148C005D1EE5 /* Debug */,
+				AA6553CE2870148C005D1EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA6553CF2870148C005D1EE5 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6553D02870148C005D1EE5 /* Debug */,
+				AA6553D12870148C005D1EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA6553D428701543005D1EE5 /* SwiftUITypographyUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUITypographyUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA6553B82870148A005D1EE5 /* Project object */;
+}

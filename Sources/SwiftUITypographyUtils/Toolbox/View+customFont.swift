@@ -14,11 +14,13 @@ extension View {
             return font(.system(baseTextStyle))
         }
         
-        return font(.custom(
-            fontDescription.fontName,
-            size: fontDescription.fontSize,
-            relativeTo: baseTextStyle
-        ))
+        return font(
+            .custom(
+                fontDescription.fontName,
+                size: fontDescription.fontSize,
+                relativeTo: baseTextStyle
+            )
+        )
     }
     
     
