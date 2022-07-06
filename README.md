@@ -10,12 +10,15 @@
 <!-- Badges -->
 
 <p>
-    <img src="https://img.shields.io/badge/Swift-5.6-F06C33.svg" />
-    <img src="https://img.shields.io/badge/iOS-14.0+-865EFC.svg" />
-    <img src="https://img.shields.io/badge/iPadOS-14.0+-F65EFC.svg" />
-    <img src="https://img.shields.io/badge/macOS-11.0+-179AC8.svg" />
-    <img src="https://img.shields.io/badge/tvOS-14.0+-41465B.svg" />
-    <img src="https://img.shields.io/badge/watchOS-7.0+-1FD67A.svg" />
+
+  [![Swift Version Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FCypherPoet%2FSwiftUITypographyUtils%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/CypherPoet/SwiftUITypographyUtils)
+
+  [![Swift Platform Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FCypherPoet%2FSwiftUITypographyUtils%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/CypherPoet/SwiftUITypographyUtils)
+
+</p>
+
+
+<p>
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
     <img src="https://github.com/CypherPoet/SwiftUITypographyUtils/workflows/Build%20&%20Test/badge.svg" />
     <a href="https://github.com/apple/swift-package-manager">
@@ -31,7 +34,7 @@
 
 _Utilities for typographic tailoring in SwiftUI._
 
-<p />
+</p>
 
 
 
@@ -89,7 +92,7 @@ Contributions to `SwiftUITypographyUtils` are most welcome. Check out some of th
 
 ### Requirements
 
-- Xcode 13.0+ (Recommended)
+- Xcode 14.0+ (Recommended)
 
 
 ### 📜 Creating & Building Documentation
