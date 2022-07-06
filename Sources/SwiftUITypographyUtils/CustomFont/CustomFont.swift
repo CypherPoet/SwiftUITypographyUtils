@@ -7,7 +7,11 @@ public struct CustomFont {
     internal typealias StyleDictionary = [StyleKey.RawValue: FontDescription]
     
     internal var styleDictionary: StyleDictionary?
+    
+    public let id: UUID = .init()
 }
+
+extension CustomFont: Identifiable {}
 
 
 // MARK: -  Public Static Instances
@@ -15,7 +19,7 @@ extension CustomFont {
 
     /// An "empty" ``CustomFont`` instance that provides utility for platform-specific
     /// system font settings.
-    public static let `default` = CustomFont()
+    public static let systemDefault = CustomFont()
 }
 
 
@@ -52,10 +56,11 @@ extension CustomFont {
         let data = try loadSettings(inFileAt: url)
         
         do {
-            styleDictionary = try PropertyListDecoder().decode(
-                StyleDictionary.self,
-                from: data
-            )
+            styleDictionary = try PropertyListDecoder()
+                .decode(
+                    StyleDictionary.self,
+                    from: data
+                )
         } catch let error as DecodingError {
             throw Error.settingsFileDecodingFailed(error)
         } catch let error {
@@ -104,4 +109,13 @@ extension CustomFont {
             relativeTo: textStyle
         )
     }
+}
+
+
+extension CustomFont: Equatable {
+    
+    public static func == (
+        lhs: Self,
+        rhs: Self
+    ) -> Bool { lhs.id == rhs.id }
 }
