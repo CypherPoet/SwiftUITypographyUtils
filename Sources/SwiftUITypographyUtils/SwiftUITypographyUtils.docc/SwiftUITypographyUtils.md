@@ -9,20 +9,20 @@
 _Utilities for typographic tailoring in SwiftUI._
 
 
-## Overview
-
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
-
-
 ## Topics
 
 ### Essentials
 
 - ``CustomFont``
+- <doc:StyleDictionary>
 
 
-### SwiftUI Environment Values
+### SwiftUI View Extensions
+
+<!--- ``SwiftUI/Font/pointSize-swift.func``-->
+
+
+### SwiftUI `EnvironmentValues`
 
 - ``CustomFontKey``
 - ``CustomFontSizeKey``
-

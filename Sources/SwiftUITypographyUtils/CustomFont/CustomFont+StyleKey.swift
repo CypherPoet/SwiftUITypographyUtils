@@ -3,7 +3,7 @@ import SwiftUI
 
 extension CustomFont {
     
-    internal enum StyleKey: String, Decodable {
+    public enum StyleKey: String, Decodable {
         case largeTitle
         case title
         case title2
@@ -12,9 +12,9 @@ extension CustomFont {
         case subheadline
         case body
         case callout
-        case footnote
         case caption
         case caption2
+        case footnote
     }
 }
 
@@ -40,12 +40,12 @@ extension CustomFont.StyleKey {
             self = .body
         case .callout:
             self = .callout
-        case .footnote:
-            self = .footnote
         case .caption:
             self = .caption
         case .caption2:
             self = .caption2
+        case .footnote:
+            self = .footnote
         @unknown default:
             return nil
         }

@@ -4,7 +4,7 @@ import SwiftUI
 /// A custom font that supports dynamic type
 /// text styles.
 public struct CustomFont {
-    internal typealias StyleDictionary = [StyleKey.RawValue: FontDescription]
+    public typealias StyleDictionary = [StyleKey.RawValue: FontDescription]
     
     internal var styleDictionary: StyleDictionary?
     
@@ -25,7 +25,7 @@ extension CustomFont {
 
 extension CustomFont {
     
-    internal struct FontDescription: Decodable {
+    public struct FontDescription: Decodable {
         let fontSize: CGFloat
         let fontName: String
     }
