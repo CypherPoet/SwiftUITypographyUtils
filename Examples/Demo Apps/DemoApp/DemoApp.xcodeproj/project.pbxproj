@@ -68,6 +68,7 @@
 		AAC248682873CE99003E1454 /* Alliance No.1 ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */; };
 		AAC248692873CE99003E1454 /* Alliance No.1 Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */; };
 		AAC2486A2873CE99003E1454 /* Alliance No.1 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */; };
+		AAFB98FF2875946300484032 /* AvailableFontsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB98FE2875946300484032 /* AvailableFontsDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alliance No.1 ExtraBold.otf"; sourceTree = "<group>"; };
 		AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Medium.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Medium.otf"; sourceTree = "<group>"; };
 		AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Regular.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Regular.otf"; sourceTree = "<group>"; };
+		AAFB98FE2875946300484032 /* AvailableFontsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableFontsDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 			children = (
 				AA6553DC2870A617005D1EE5 /* MainAppViewer.swift */,
 				AA6553C52870148A005D1EE5 /* RootView.swift */,
+				AAFB98FD2875944700484032 /* Available Fonts  */,
 				AA6553DE2870A78F005D1EE5 /* Custom Font */,
 			);
 			path = "Scene Views";
@@ -383,6 +386,14 @@
 				AA98603D2875259B0001ACE8 /* UserDefaults+CustomKeys.swift */,
 			);
 			path = "User Defaults";
+			sourceTree = "<group>";
+		};
+		AAFB98FD2875944700484032 /* Available Fonts  */ = {
+			isa = PBXGroup;
+			children = (
+				AAFB98FE2875946300484032 /* AvailableFontsDemoView.swift */,
+			);
+			path = "Available Fonts ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,6 +516,7 @@
 			files = (
 				AA6553C62870148A005D1EE5 /* RootView.swift in Sources */,
 				AA6553E52870B9D1005D1EE5 /* CustomFont+Utils.swift in Sources */,
+				AAFB98FF2875946300484032 /* AvailableFontsDemoView.swift in Sources */,
 				AA6D220C2873D84F00B25954 /* FontDisplayModeFilterCarouselView.swift in Sources */,
 				AA04521A2873A36B006637FA /* FontDisplayMode.swift in Sources */,
 				AA6553E02870A7A0005D1EE5 /* CustomFontDemoView.swift in Sources */,

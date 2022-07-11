@@ -32,6 +32,9 @@ extension MainAppViewer: View {
                 NavigationLink("Custom Font") {
                     CustomFontDemoView()
                 }
+                NavigationLink("Listing Available Fonts") {
+                    AvailableFontsDemoView()
+                }
             }
         }
         .navigationTitle("SwiftUI Typography Utils")
