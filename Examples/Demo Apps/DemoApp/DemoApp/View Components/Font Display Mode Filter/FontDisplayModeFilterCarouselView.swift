@@ -20,6 +20,7 @@ struct FontDisplayModeFilterCarouselView {
         .prometo,
         .prometoHeadlineSoletoBody,
         .allianceNumberOne,
+        .polySans,
         .system,
     ]
     

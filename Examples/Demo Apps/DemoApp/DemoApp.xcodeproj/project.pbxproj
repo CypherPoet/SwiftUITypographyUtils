@@ -53,7 +53,8 @@
 		AA6D220E2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D220D2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift */; };
 		AA98603A2875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9860392875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift */; };
 		AA98603E2875259B0001ACE8 /* UserDefaults+CustomKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA98603D2875259B0001ACE8 /* UserDefaults+CustomKeys.swift */; };
-		AAC2484E2873CE54003E1454 /* AllianceNumberOneSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC2484D2873CE54003E1454 /* AllianceNumberOneSettings.plist */; };
+		AAAC90EA2883326B00FF17FB /* AllianceNumberOneSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAAC90E92883323200FF17FB /* AllianceNumberOneSettings.plist */; };
+		AAC2484E2873CE54003E1454 /* PolySansSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC2484D2873CE54003E1454 /* PolySansSettings.plist */; };
 		AAC2485D2873CE99003E1454 /* Alliance No.1 SemiBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2484F2873CE98003E1454 /* Alliance No.1 SemiBold Italic.otf */; };
 		AAC2485E2873CE99003E1454 /* Alliance No.1 ExtraBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248502873CE98003E1454 /* Alliance No.1 ExtraBold Italic.otf */; };
 		AAC2485F2873CE99003E1454 /* Alliance No.1 Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC248512873CE98003E1454 /* Alliance No.1 Bold Italic.otf */; };
@@ -68,6 +69,14 @@
 		AAC248682873CE99003E1454 /* Alliance No.1 ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */; };
 		AAC248692873CE99003E1454 /* Alliance No.1 Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */; };
 		AAC2486A2873CE99003E1454 /* Alliance No.1 Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */; };
+		AAC3632728832DF200EC6D71 /* PolySansTrial-NeutralItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3631F28832DEF00EC6D71 /* PolySansTrial-NeutralItalic.otf */; };
+		AAC3632828832DF200EC6D71 /* PolySansTrial-Slim.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632028832DEF00EC6D71 /* PolySansTrial-Slim.otf */; };
+		AAC3632928832DF200EC6D71 /* PolySansTrial-SlimItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632128832DF000EC6D71 /* PolySansTrial-SlimItalic.otf */; };
+		AAC3632A28832DF200EC6D71 /* PolySansTrial-BulkyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632228832DF000EC6D71 /* PolySansTrial-BulkyItalic.otf */; };
+		AAC3632B28832DF200EC6D71 /* PolySansTrial-Median.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632328832DF000EC6D71 /* PolySansTrial-Median.otf */; };
+		AAC3632C28832DF200EC6D71 /* PolySansTrial-MedianItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632428832DF100EC6D71 /* PolySansTrial-MedianItalic.otf */; };
+		AAC3632D28832DF200EC6D71 /* PolySansTrial-Bulky.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632528832DF100EC6D71 /* PolySansTrial-Bulky.otf */; };
+		AAC3632E28832DF200EC6D71 /* PolySansTrial-Neutral.otf in Resources */ = {isa = PBXBuildFile; fileRef = AAC3632628832DF200EC6D71 /* PolySansTrial-Neutral.otf */; };
 		AAFB98FF2875946300484032 /* AvailableFontsDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB98FE2875946300484032 /* AvailableFontsDemoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -120,7 +129,8 @@
 		AA6D220D2874AD5C00B25954 /* FontDisplayModeFilterChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDisplayModeFilterChipView.swift; sourceTree = "<group>"; };
 		AA9860392875179C0001ACE8 /* WalletTransactionInfo+PreviewItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WalletTransactionInfo+PreviewItems.swift"; sourceTree = "<group>"; };
 		AA98603D2875259B0001ACE8 /* UserDefaults+CustomKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+CustomKeys.swift"; sourceTree = "<group>"; };
-		AAC2484D2873CE54003E1454 /* AllianceNumberOneSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = AllianceNumberOneSettings.plist; path = DemoApp/Resources/Fonts/Soleto/AllianceNumberOneSettings.plist; sourceTree = SOURCE_ROOT; };
+		AAAC90E92883323200FF17FB /* AllianceNumberOneSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AllianceNumberOneSettings.plist; sourceTree = "<group>"; };
+		AAC2484D2873CE54003E1454 /* PolySansSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PolySansSettings.plist; path = DemoApp/Resources/Fonts/PolySans/PolySansSettings.plist; sourceTree = SOURCE_ROOT; };
 		AAC2484F2873CE98003E1454 /* Alliance No.1 SemiBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 SemiBold Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 SemiBold Italic.otf"; sourceTree = "<group>"; };
 		AAC248502873CE98003E1454 /* Alliance No.1 ExtraBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 ExtraBold Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 ExtraBold Italic.otf"; sourceTree = "<group>"; };
 		AAC248512873CE98003E1454 /* Alliance No.1 Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Bold Italic.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Bold Italic.otf"; sourceTree = "<group>"; };
@@ -135,6 +145,14 @@
 		AAC2485A2873CE99003E1454 /* Alliance No.1 ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alliance No.1 ExtraBold.otf"; sourceTree = "<group>"; };
 		AAC2485B2873CE99003E1454 /* Alliance No.1 Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Medium.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Medium.otf"; sourceTree = "<group>"; };
 		AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alliance No.1 Regular.otf"; path = "../../../../../../../../../../../Library/Fonts/Alliance No.1 Regular.otf"; sourceTree = "<group>"; };
+		AAC3631F28832DEF00EC6D71 /* PolySansTrial-NeutralItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-NeutralItalic.otf"; sourceTree = "<group>"; };
+		AAC3632028832DEF00EC6D71 /* PolySansTrial-Slim.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-Slim.otf"; sourceTree = "<group>"; };
+		AAC3632128832DF000EC6D71 /* PolySansTrial-SlimItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-SlimItalic.otf"; sourceTree = "<group>"; };
+		AAC3632228832DF000EC6D71 /* PolySansTrial-BulkyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-BulkyItalic.otf"; sourceTree = "<group>"; };
+		AAC3632328832DF000EC6D71 /* PolySansTrial-Median.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-Median.otf"; sourceTree = "<group>"; };
+		AAC3632428832DF100EC6D71 /* PolySansTrial-MedianItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-MedianItalic.otf"; sourceTree = "<group>"; };
+		AAC3632528832DF100EC6D71 /* PolySansTrial-Bulky.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-Bulky.otf"; sourceTree = "<group>"; };
+		AAC3632628832DF200EC6D71 /* PolySansTrial-Neutral.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PolySansTrial-Neutral.otf"; sourceTree = "<group>"; };
 		AAFB98FE2875946300484032 /* AvailableFontsDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableFontsDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +196,7 @@
 		AA22D4A52873CDA40022B840 /* Alliance No 1 */ = {
 			isa = PBXGroup;
 			children = (
+				AAAC90E92883323200FF17FB /* AllianceNumberOneSettings.plist */,
 				AAC248552873CE99003E1454 /* Alliance No.1 Black Italic.otf */,
 				AAC248592873CE99003E1454 /* Alliance No.1 Black.otf */,
 				AAC248512873CE98003E1454 /* Alliance No.1 Bold Italic.otf */,
@@ -192,7 +211,6 @@
 				AAC2485C2873CE99003E1454 /* Alliance No.1 Regular.otf */,
 				AAC2484F2873CE98003E1454 /* Alliance No.1 SemiBold Italic.otf */,
 				AAC248522873CE98003E1454 /* Alliance No.1 SemiBold.otf */,
-				AAC2484D2873CE54003E1454 /* AllianceNumberOneSettings.plist */,
 			);
 			path = "Alliance No 1";
 			sourceTree = "<group>";
@@ -294,6 +312,7 @@
 		AA6553E12870B955005D1EE5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AAC3631E28832D6B00EC6D71 /* PolySans */,
 				AA22D4A52873CDA40022B840 /* Alliance No 1 */,
 				AA22D4A62873CDB10022B840 /* Alliance No 2 */,
 				AA6553E62871DE04005D1EE5 /* Prometo */,
@@ -388,6 +407,22 @@
 			path = "User Defaults";
 			sourceTree = "<group>";
 		};
+		AAC3631E28832D6B00EC6D71 /* PolySans */ = {
+			isa = PBXGroup;
+			children = (
+				AAC3632528832DF100EC6D71 /* PolySansTrial-Bulky.otf */,
+				AAC3632228832DF000EC6D71 /* PolySansTrial-BulkyItalic.otf */,
+				AAC3632328832DF000EC6D71 /* PolySansTrial-Median.otf */,
+				AAC3632428832DF100EC6D71 /* PolySansTrial-MedianItalic.otf */,
+				AAC3632628832DF200EC6D71 /* PolySansTrial-Neutral.otf */,
+				AAC3631F28832DEF00EC6D71 /* PolySansTrial-NeutralItalic.otf */,
+				AAC3632028832DEF00EC6D71 /* PolySansTrial-Slim.otf */,
+				AAC3632128832DF000EC6D71 /* PolySansTrial-SlimItalic.otf */,
+				AAC2484D2873CE54003E1454 /* PolySansSettings.plist */,
+			);
+			path = PolySans;
+			sourceTree = "<group>";
+		};
 		AAFB98FD2875944700484032 /* Available Fonts  */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,10 +494,11 @@
 			files = (
 				AA655431287237BB005D1EE5 /* Soleto-Italic.ttf in Resources */,
 				AAC2485E2873CE99003E1454 /* Alliance No.1 ExtraBold Italic.otf in Resources */,
+				AAC3632E28832DF200EC6D71 /* PolySansTrial-Neutral.otf in Resources */,
 				AA655430287237BB005D1EE5 /* Soleto-XBoldItalic.ttf in Resources */,
 				AA65542B287237BB005D1EE5 /* Soleto-BlackItalic.ttf in Resources */,
 				AA6554152871EA82005D1EE5 /* PrometoSettings.plist in Resources */,
-				AAC2484E2873CE54003E1454 /* AllianceNumberOneSettings.plist in Resources */,
+				AAC2484E2873CE54003E1454 /* PolySansSettings.plist in Resources */,
 				AAC248652873CE99003E1454 /* Alliance No.1 Light Italic.otf in Resources */,
 				AA6553FB2871DE38005D1EE5 /* Prometo-MediumItalic.ttf in Resources */,
 				AA65542D287237BB005D1EE5 /* Soleto-Bold.ttf in Resources */,
@@ -473,22 +509,29 @@
 				AA6553F92871DE38005D1EE5 /* Prometo-Medium.ttf in Resources */,
 				AA655433287237BB005D1EE5 /* Soleto-BoldItalic.ttf in Resources */,
 				AA6554002871DE38005D1EE5 /* Prometo-Light.ttf in Resources */,
+				AAC3632A28832DF200EC6D71 /* PolySansTrial-BulkyItalic.otf in Resources */,
+				AAC3632D28832DF200EC6D71 /* PolySansTrial-Bulky.otf in Resources */,
 				AAC248672873CE99003E1454 /* Alliance No.1 Black.otf in Resources */,
 				AAC2485D2873CE99003E1454 /* Alliance No.1 SemiBold Italic.otf in Resources */,
 				AAC2485F2873CE99003E1454 /* Alliance No.1 Bold Italic.otf in Resources */,
+				AAC3632C28832DF200EC6D71 /* PolySansTrial-MedianItalic.otf in Resources */,
 				AAC248662873CE99003E1454 /* Alliance No.1 Light.otf in Resources */,
 				AA65542A287237BB005D1EE5 /* Soleto-Black.ttf in Resources */,
 				AA6553F52871DE38005D1EE5 /* Prometo-XBold.ttf in Resources */,
 				AA65542C287237BB005D1EE5 /* Soleto-MediumItalic.ttf in Resources */,
 				AA65542F287237BB005D1EE5 /* Soleto-Thin.ttf in Resources */,
 				AA6553F62871DE38005D1EE5 /* Prometo-Thin.ttf in Resources */,
+				AAC3632728832DF200EC6D71 /* PolySansTrial-NeutralItalic.otf in Resources */,
+				AAAC90EA2883326B00FF17FB /* AllianceNumberOneSettings.plist in Resources */,
 				AA655427287237BB005D1EE5 /* SoletoSettings.plist in Resources */,
 				AA6553C82870148C005D1EE5 /* Assets.xcassets in Resources */,
+				AAC3632928832DF200EC6D71 /* PolySansTrial-SlimItalic.otf in Resources */,
 				AA655432287237BB005D1EE5 /* Soleto-Medium.ttf in Resources */,
 				AA6553FF2871DE38005D1EE5 /* Prometo-ThinItalic.ttf in Resources */,
 				AA6553FA2871DE38005D1EE5 /* Prometo-Black.ttf in Resources */,
 				AAC248602873CE99003E1454 /* Alliance No.1 SemiBold.otf in Resources */,
 				AAC248612873CE99003E1454 /* Alliance No.1 Medium Italic.otf in Resources */,
+				AAC3632B28832DF200EC6D71 /* PolySansTrial-Median.otf in Resources */,
 				AAC248632873CE99003E1454 /* Alliance No.1 Black Italic.otf in Resources */,
 				AAC248692873CE99003E1454 /* Alliance No.1 Medium.otf in Resources */,
 				AA655434287237BB005D1EE5 /* Soleto-Regular.ttf in Resources */,
@@ -500,6 +543,7 @@
 				AA655426287237BB005D1EE5 /* Soleto-Light.ttf in Resources */,
 				AA6553FE2871DE38005D1EE5 /* Prometo-XBoldItalic.ttf in Resources */,
 				AAC248622873CE99003E1454 /* Alliance No.1 Regular Italic.otf in Resources */,
+				AAC3632828832DF200EC6D71 /* PolySansTrial-Slim.otf in Resources */,
 				AA6554022871DE38005D1EE5 /* Prometo.ttf in Resources */,
 				AA6553F72871DE38005D1EE5 /* Prometo-Italic.ttf in Resources */,
 				AA65542E287237BB005D1EE5 /* Soleto-ThinItalic.ttf in Resources */,

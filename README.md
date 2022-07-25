@@ -1,4 +1,4 @@
-# SwiftUI Typography Utils
+# SwiftUI Typography Utils ✍️
 
 <!-- Header Logo -->
 

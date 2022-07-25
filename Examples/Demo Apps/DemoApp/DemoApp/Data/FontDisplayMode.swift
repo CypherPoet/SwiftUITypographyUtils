@@ -12,6 +12,7 @@ enum FontDisplayMode: String {
     case prometo
     case prometoHeadlineSoletoBody
     case allianceNumberOne
+    case polySans
     case system
 }
 
@@ -37,6 +38,8 @@ extension FontDisplayMode {
             return "Default System Font"
         case .allianceNumberOne:
             return "Alliance No. 1"
+        case .polySans:
+            return "PolySans"
         }
     }
 
@@ -49,6 +52,8 @@ extension FontDisplayMode {
             return .prometo
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -63,6 +68,8 @@ extension FontDisplayMode {
             return .prometo
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -77,6 +84,8 @@ extension FontDisplayMode {
             return .prometo
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -91,6 +100,8 @@ extension FontDisplayMode {
             return .prometo
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -105,6 +116,8 @@ extension FontDisplayMode {
             return .prometo
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -119,6 +132,8 @@ extension FontDisplayMode {
             return .soleto
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -133,6 +148,8 @@ extension FontDisplayMode {
             return .soleto
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -147,6 +164,8 @@ extension FontDisplayMode {
             return .soleto
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -161,6 +180,8 @@ extension FontDisplayMode {
             return .soleto
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -175,6 +196,8 @@ extension FontDisplayMode {
             return .soleto
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
@@ -189,6 +212,8 @@ extension FontDisplayMode {
             return .soleto
         case .allianceNumberOne:
             return .allianceNumberOne
+        case .polySans:
+            return .polySans
         case .system:
             return .systemDefault
         }
